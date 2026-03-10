@@ -1,36 +1,66 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DPW II - ITPM 2026</title>
+    <title>FreshCart - Supermercado</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        :root { --primary: #2563eb; --dark: #1e293b; --bg: #f8fafc; }
-        body { font-family: 'Inter', system-ui, sans-serif; background: var(--bg); margin: 0; display: flex; justify-content: center; align-items: center; min-height: 100vh; }
-        .card { background: white; width: 90%; max-width: 800px; padding: 2rem; border-radius: 1rem; shadow: 0 10px 15px -3px rgba(0,0,0,0.1); border-left: 8px solid var(--primary); }
-        h1 { color: var(--dark); margin-top: 0; }
-        .badge { background: var(--primary); color: white; padding: 4px 12px; border-radius: 20px; font-size: 0.8rem; }
-        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 2rem; }
-        .box { border: 1px dashed #cbd5e1; padding: 1rem; border-radius: 0.5rem; }
+        /* Estilos adicionales con Flexbox */
+        .hero-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 2rem 0;
+        }
+        .hero-text {
+            flex: 1;
+            padding-right: 2rem;
+        }
+        .hero-img {
+            flex: 1;
+            text-align: right;
+        }
+        .hero-img img {
+            max-width: 100%;
+            height: auto;
+        }
     </style>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <div class="card">
-        <span class="badge">Sistemas Informáticos</span>
-        <h1>🌐 Diseño y Programación Web II</h1>
-        <p><strong>Estudiante:</strong> [TU NOMBRE COMPLETO]</p>
-        <hr>
-        <div class="grid">
-            <div class="box">
-                <strong>🔧 Stack Tecnológico:</strong><br>
-                PHP / MySQL / Laravel
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">FreshCart</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Productos</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Ofertas</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Nosotros</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Sección principal (Hero) -->
+    <div class="container">
+        <div class="hero-section">
+            <div class="hero-text">
+                <h1>Supermercado<br>para alimentos<br>frescos</h1>
+                <!-- Aquí se pueden agregar botones o texto adicional -->
             </div>
-            <div class="box">
-                <strong>📁 Proyecto Final:</strong><br>
-                [Nombre de tu Sistema]
+            <div class="hero-img">
+                <img src="imagen-supermercado.jpg" alt="Persona con productos frescos">
             </div>
         </div>
     </div>
+
+    <!-- Bootstrap JS y dependencias -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
